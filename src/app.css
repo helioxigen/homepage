@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  width: 100%;
+  font-family: 'Fira Mono', monospace;
+}
+
+#canvas{
+  width: 100%;
+}
+
+.name{
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-left: -325px;
+  margin-top: -50px;
+  width: 650px;
+  height: 100px;
+  font-size: 4em
+}
+
+.name a{
+  color: red;
+}
