@@ -6,13 +6,15 @@ class Title extends React.PureComponent {
     super();
     this.state = {
       title: '',
+      name: '',
       github: '',
       chick: '',
     };
   }
   componentDidMount = () => {
     const titles = {
-      title: 'helioxigen|space \n >name: Alexander \n',
+      title: '>helioxigen|space',
+      name: '>name: Alexander',
       github: '>github:',
       chick: 'click',
     };
@@ -27,7 +29,7 @@ class Title extends React.PureComponent {
         newTitle += title[i];
         obj[titleName] = newTitle;
         component.setState(obj);
-        await sleep(120);
+        await sleep(90);
       }
     }
     const keys = Object.keys(titles);
@@ -43,14 +45,15 @@ class Title extends React.PureComponent {
   render() {
     return (
       <div className="name">
-        <TitleWord title={this.state.title} />
-        <Url preword={this.state.github} chick={this.state.chick} />
+        <div>{this.state.title}</div>
+        <div>{this.state.name}</div>
+        <div>
+          {this.state.github}
+          <a href="https://github.com/helioxigen">{this.state.chick}</a>
+        </div>
       </div>
     );
   }
 }
-
-const TitleWord = props => <div>{`>${props.title}`}</div>;
-const Url = props => <div>{props.preword} <a href="https://github.com/helioxigen">{props.chick}</a></div>;
 
 export default Title;

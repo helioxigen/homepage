@@ -25,7 +25,7 @@ class Canvas extends React.PureComponent {
         rand = Math.floor(Math.random() * 100);
         if (startPoint > canvasWidth) {
           offset += rand / 2;
-          startPoint = 1;
+          startPoint = rand / 3;
         }
         point(startPoint, offset);
         startPoint += rand;

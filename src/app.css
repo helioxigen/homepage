@@ -9,24 +9,20 @@ body{
 }
 
 .name{
-  position: absolute;
   color: white;
   top: 50%;
   left: 50%;
-  margin-left: -325px;
-  margin-top: -115px;
-  width: 650px;
-  height: 230px;
+  position: fixed;
+  transform: translate(-50%, -50%);
   font-size: 4em
 }
 
 @media (max-width: 650px) and (orientation: portrait) {
   .name{
-    transform: rotate(90deg);
-    font-size: 2em;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-size: 3em;
   }
 }
-
 
 .name a{
   color: red;
