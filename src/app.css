@@ -23,6 +23,7 @@ body{
 @media (max-width: 650px) and (orientation: portrait) {
   .name{
     transform: rotate(90deg);
+    font-size: 2em;
   }
 }
 
