@@ -27,7 +27,7 @@ class Title extends React.PureComponent {
         newTitle += title[i];
         obj[titleName] = newTitle;
         component.setState(obj);
-        await sleep(200);
+        await sleep(120);
       }
     }
     const keys = Object.keys(titles);
