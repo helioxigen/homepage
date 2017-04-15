@@ -15,7 +15,7 @@ class Title extends React.PureComponent {
     const titles = {
       title: '>helioxigen|space',
       name: '>name: Alexander',
-      github: '>github:',
+      github: '>github: ',
       chick: 'click',
     };
 
