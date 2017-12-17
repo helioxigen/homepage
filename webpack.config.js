@@ -63,16 +63,16 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new UglifyJsPlugin({
-      mangle: {
-        screw_ie8: true,
-        keep_fnames: true
-      },
-      compress: {
-        screw_ie8: true
-      },
-      comments: false
-    }),
+    // new UglifyJsPlugin({
+    //   mangle: {
+    //     screw_ie8: true,
+    //     keep_fnames: true
+    //   },
+    //   compress: {
+    //     screw_ie8: true
+    //   },
+    //   comments: false
+    // }),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'public'),
